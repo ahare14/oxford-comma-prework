@@ -9,5 +9,7 @@
 # end
 
 def oxford_comma(array)
-  array.to_sentence()
+  array_1 = array.split(array.length - 1)
+  array_2 = array_1.join(', ')
+  array_2 + ", and #{array[-1]}"
 end
